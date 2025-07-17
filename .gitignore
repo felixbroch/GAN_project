@@ -198,8 +198,19 @@ checkpoints/
 
 # Virtual environments specific to this project
 fyp-dev/
-dataset/
 bin/
 lib64/
 pyvenv.cfg
 activate*
+
+# Dataset files (large image files not suitable for Git)
+dataset/Pistachio_Image_Dataset/*.jpg
+dataset/Pistachio_Image_Dataset/*.jpeg
+dataset/Pistachio_Image_Dataset/*.png
+dataset/Pistachio_Image_Dataset/Kirmizi_Pistachio/
+dataset/CW_GAN/*.png
+dataset/CW_GAN/*.pth
+dataset/CW_GAN/*.pkl
+
+# Allow dataset folder structure and metadata files
+# The dataset folder itself and text files will be tracked

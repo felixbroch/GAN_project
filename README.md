@@ -57,20 +57,22 @@ The training employs a systematic approach to hyperparameter exploration:
 ```
 GAN_project/
 ├── README.md                           # Project documentation
+├── GAN_dataset_new copy.ipynb          # Main training notebook
 ├── environment.yml                     # Conda environment specification
 ├── .gitignore                         # Git ignore patterns
-└── src/
-    └── dataset/
-        ├── GAN_dataset_new copy.ipynb # Main training notebook
-        ├── Pistachio_Image_Dataset/   # Dataset directory
-        │   ├── Kirmizi_Pistachio/     # Red pistachio images
-        │   └── Pistachio_Image_Dataset_Request.txt # Dataset citation info
-        └── CW_GAN/                    # Generated images and training outputs
-            ├── real_samples.png       # Sample real images
-            ├── fake_samples_*.png     # Generated images by epoch
-            ├── GAN_G_model.pth        # Saved generator model
-            ├── GAN_D_model.pth        # Saved discriminator model
-            └── loss_data.pkl          # Training loss history
+└── dataset/                           # Dataset directory (structure tracked)
+    ├── DATASET_INFO.md                # Dataset setup instructions
+    ├── Pistachio_Image_Dataset/       # Dataset directory
+    │   ├── README.md                  # Dataset setup instructions
+    │   ├── Kirmizi_Pistachio/         # Red pistachio images (*.jpg excluded from Git)
+    │   └── Pistachio_Image_Dataset_Request.txt # Dataset citation info
+    └── CW_GAN/                        # Generated images and training outputs
+        ├── README.md                  # Output directory information
+        ├── real_samples.png           # Sample real images (excluded from Git)
+        ├── fake_samples_*.png         # Generated images by epoch (excluded from Git)
+        ├── GAN_G_model.pth            # Saved generator model (excluded from Git)
+        ├── GAN_D_model.pth            # Saved discriminator model (excluded from Git)
+        └── loss_data.pkl              # Training loss history (excluded from Git)
 ```
 
 ## Usage Instructions
@@ -92,7 +94,7 @@ GAN_project/
 
 2. **Open the main notebook**:
    ```bash
-   jupyter notebook src/dataset/GAN_dataset_new\ copy.ipynb
+   jupyter notebook "GAN_dataset_new copy.ipynb"
    ```
 
 3. **Execute the cells sequentially**:
@@ -105,6 +107,7 @@ GAN_project/
 
 - **`GAN_dataset_new copy.ipynb`**: Main training notebook with comprehensive documentation
 - **`environment.yml`**: Complete dependency specification for reproducibility
+- **`dataset/DATASET_INFO.md`**: Dataset setup instructions and information
 
 ## Training Notes and Limitations
 
