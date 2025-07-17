@@ -41,9 +41,3 @@ Large dataset files are excluded from Git version control because:
 - **Binary files** don't benefit from version control
 - **Reproducibility** is achieved through download instructions and preprocessing code
 - **Best practice** for machine learning projects
-
-**Note**: The directory structure and documentation files are tracked in Git, but the actual image files (.jpg, .png) and model files (.pth, .pkl) are excluded.
-
-### Alternative: Git LFS
-
-For projects requiring dataset version control, consider using Git Large File Storage (LFS) for large binary files.
