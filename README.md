@@ -87,27 +87,16 @@ GAN_project/
 
 ### Running the Code
 
-1. **Navigate to the project directory**:
-   ```bash
-   cd GAN_project
-   ```
-
-2. **Open the main notebook**:
+1. **Open the main notebook**:
    ```bash
    jupyter notebook "GAN_dataset_new copy.ipynb"
    ```
 
-3. **Execute the cells sequentially**:
+2. **Execute the cells sequentially**:
    - Import libraries and set hyperparameters
    - Load and preprocess the dataset
    - Define the GAN architecture
    - Run the training loop with hyperparameter sweep
-
-### Key Files
-
-- **`GAN_dataset_new copy.ipynb`**: Main training notebook with comprehensive documentation
-- **`environment.yml`**: Complete dependency specification for reproducibility
-- **`dataset/DATASET_INFO.md`**: Dataset setup instructions and information
 
 ## Training Notes and Limitations
 
@@ -115,7 +104,7 @@ GAN_project/
 
 The model training was initiated using GPU infrastructure at École Polytechnique, providing access to CUDA-enabled hardware for accelerated training. The implementation is designed to automatically detect and utilise available GPU resources while maintaining CPU compatibility.
 
-However, due to academic timeline constraints and the conclusion of access to École Polytechnique's supercomputing facilities, comprehensive hyperparameter optimization could not be completed. This limitation represents a significant constraint on the project's ability to achieve optimal model performance and convergence.
+However, due to academic timeline constraints and the conclusion of access to École Polytechnique's supercomputing facilities, comprehensive hyperparameter optimisation could not be completed. This limitation represents a significant constraint on the project's ability to achieve optimal model performance and convergence.
 
 ### Known Limitations
 
@@ -132,7 +121,6 @@ Due to time constraints and infrastructure access limitations at École Polytech
 The training process generates:
 - **Generated Images**: Timestamped samples showing generator progress
 - **Model Checkpoints**: Saved Generator and Discriminator state dictionaries
-- **Loss History**: Comprehensive tracking of training dynamics
 - **Hyperparameter Logs**: Systematic record of all tested configurations
 
 ## Results and Observations
